@@ -27,16 +27,24 @@ export default class Carousel extends Component {
                         </div>
                     </div>
                     <div>
-                        <p>200</p>
+                        <div className="bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://www.outsideonline.com/wp-content/uploads/2020/02/03/traveling-with-anxiety_h.jpg')"}}>
+                            <p>100</p>
+                        </div>
                     </div>
                     <div>
-                        <p>75</p>
+                        <div className="bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://www.outsideonline.com/wp-content/uploads/2020/02/03/traveling-with-anxiety_h.jpg')"}}>
+                            <p>100</p>
+                        </div>
                     </div>
                     <div>
-                        <p>300</p>
+                        <div className="bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://www.outsideonline.com/wp-content/uploads/2020/02/03/traveling-with-anxiety_h.jpg')"}}>
+                            <p>100</p>
+                        </div>
                     </div>
                     <div>
-                        <p>225</p>
+                        <div className="bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://www.outsideonline.com/wp-content/uploads/2020/02/03/traveling-with-anxiety_h.jpg')"}}>
+                            <p>100</p>
+                        </div>
                     </div>
                 </Slider>
             </div>
