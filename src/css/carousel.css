@@ -1,0 +1,19 @@
+.slick-slider .slick-prev, .slick-slider .slick-next {
+    position: absolute;
+}
+.slick-initialized .slick-slide {
+    background: blue;
+    width: 15rem;
+    margin: 0 0.5rem;
+    height: 8.75rem;
+    border-radius: 0.5rem;
+    -webkit-transform: translateX(1rem);
+    -moz-transform: translateX(1rem);
+    -ms-transform: translateX(1rem);
+    -o-transform: translateX(1rem);
+    transform: translateX(1rem);
+    overflow: hidden;
+}
+.slick-initialized .slick-slide div, .slick-initialized .slick-slide div div{
+    height: 100%;
+}

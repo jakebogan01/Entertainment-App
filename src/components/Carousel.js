@@ -2,61 +2,41 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import '../css/carousel.css';
 
 export default class Carousel extends Component {
     render() {
-        let settings = {
-            dots: true,
-            infinite: false,
+        const settings = {
+            className: "slider variable-width",
+            dots: false,
             speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            infinite: true,
+            centerMode: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             initialSlide: 0,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        initialSlide: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
+            variableWidth: true
         };
         return (
-            <div>
-                <h2> Responsive </h2>
+            <div className="">
+                <h2 className="font-light text-xl text-white pl-4 mb-4">Trending</h2>
                 <Slider {...settings}>
                     <div>
-                        <h3>1</h3>
+                        <div className="bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://www.outsideonline.com/wp-content/uploads/2020/02/03/traveling-with-anxiety_h.jpg')"}}>
+                            <p>100</p>
+                        </div>
                     </div>
                     <div>
-                        <h3>2</h3>
+                        <p>200</p>
                     </div>
                     <div>
-                        <h3>3</h3>
+                        <p>75</p>
                     </div>
                     <div>
-                        <h3>4</h3>
+                        <p>300</p>
                     </div>
                     <div>
-                        <h3>5</h3>
+                        <p>225</p>
                     </div>
                 </Slider>
             </div>
