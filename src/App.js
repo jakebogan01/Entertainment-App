@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
     return (
         <Router>
-            <div className="App bg-[#10141E]">
+            <div className="App bg-[#10141E] font-outfit">
                 <Navbar />
                 <main>
                     <Search />
