@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // font-family: 'Outfit', sans-serif;
       fontFamily: {
         sans: ['Outfit', ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        '1440': '1440px',
       },
     },
   },
