@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import user from '../assets/images/user.jpg';
 import {Component} from "react";
 
@@ -13,16 +13,26 @@ export default class Navbar extends Component {
 
                 <ul className="flex items-center space-x-6">
                     <li>
-                        <Link to="#" className="text-white md:hover:text-[#FC4747] transition-colors">
+                        <NavLink to="/" className="text-white md:hover:text-[#FC4747] transition-colors"
+                          style={({ isActive }) =>
+                              isActive
+                                  ? { color: '#ffffff', }
+                                  : { color: '#5A698F' }
+                          } end>
                             <svg width="20" height="20" fill="currentColor" className="hidden" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M1 0h7c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H1c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1Zm0 11h7c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H1c-.6 0-1-.4-1-1v-7c0-.6.4-1 1-1ZM19 0h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm-7 11h7c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1v-7c0-.6.4-1 1-1Z"/></svg>
                             <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M.8 0h5.6c.48 0 .8.32.8.8v5.6c0 .48-.32.8-.8.8H.8c-.48 0-.8-.32-.8-.8V.8C0 .32.32 0 .8 0Zm0 8.8h5.6c.48 0 .8.32.8.8v5.6c0 .48-.32.8-.8.8H.8c-.48 0-.8-.32-.8-.8V9.6c0-.48.32-.8.8-.8ZM15.2 0H9.6c-.48 0-.8.32-.8.8v5.6c0 .48.32.8.8.8h5.6c.48 0 .8-.32.8-.8V.8c0-.48-.32-.8-.8-.8ZM9.6 8.8h5.6c.48 0 .8.32.8.8v5.6c0 .48-.32.8-.8.8H9.6c-.48 0-.8-.32-.8-.8V9.6c0-.48.32-.8.8-.8Z"/></svg>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="#" className="text-[#5A698F] md:hover:text-[#FC4747] transition-colors">
+                        <NavLink to="/movies" className="text-[#5A698F] md:hover:text-[#FC4747] transition-colors"
+                         style={({ isActive }) =>
+                             isActive
+                                 ? { color: '#ffffff', }
+                                 : { color: '#5A698F' }
+                         } end>
                             <svg width="20" height="20" fill="currentColor" className="hidden" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M16.956 0H3.044A3.044 3.044 0 0 0 0 3.044v13.912A3.044 3.044 0 0 0 3.044 20h13.912A3.045 3.045 0 0 0 20 16.956V3.044A3.045 3.045 0 0 0 16.956 0ZM4 9H2V7h2v2Zm0 2H2v2h2v-2Zm14-2h-2V7h2v2Zm0 2h-2v2h2v-2Zm0-8.26V4h-2V2h1.26a.74.74 0 0 1 .74.74ZM4 2H2.74a.74.74 0 0 0-.74.74V4h2V2ZM2 17.26V16h2v2H2.74a.74.74 0 0 1-.74-.74Zm15.26.74a.74.74 0 0 0 .74-.74V16h-2v2h1.26Z"/></svg>
                             <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M13.564 0H2.436A2.436 2.436 0 0 0 0 2.436v11.128A2.436 2.436 0 0 0 2.436 16h11.128A2.435 2.435 0 0 0 16 13.564V2.436A2.435 2.435 0 0 0 13.564 0ZM3.2 7.2H1.6V5.6h1.6v1.6Zm0 1.6H1.6v1.6h1.6V8.8Zm11.2-1.6h-1.6V5.6h1.6v1.6Zm0 1.6h-1.6v1.6h1.6V8.8Zm0-6.608V3.2h-1.6V1.6h1.008a.592.592 0 0 1 .592.592ZM3.2 1.6H2.192a.592.592 0 0 0-.592.592V3.2h1.6V1.6ZM1.6 13.808V12.8h1.6v1.6H2.192a.592.592 0 0 1-.592-.592Zm11.2.592h1.008a.592.592 0 0 0 .592-.592V12.8h-1.6v1.6Z"/></svg>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
                         <Link to="#" className="text-[#5A698F] md:hover:text-[#FC4747] transition-colors">
