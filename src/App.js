@@ -17,7 +17,7 @@ function App() {
                 {showNav && <Navbar />}
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home title="Home" />}></Route>
+                        <Route path="/" element={<Home title="Home" funcNav={setShowNav} />}></Route>
                         <Route path="/movies" element={<Movies title="Movies" />}></Route>
                         <Route path="/tv-series" element={<Shows title="TV Show" />}></Route>
                         <Route path="/my-bookmarks" element={<Bookmarked title="My Bookmarks" />}></Route>
