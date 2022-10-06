@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
-import Search from "./components/Search";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
+import Shows from "./pages/Shows";
 import './assets/css/global.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
@@ -14,6 +14,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
                         <Route path="/movies" element={<Movies />}></Route>
+                        <Route path="/tv-series" element={<Shows />}></Route>
                     </Routes>
                 </main>
             </div>

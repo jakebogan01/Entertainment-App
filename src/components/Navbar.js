@@ -35,10 +35,15 @@ export default class Navbar extends Component {
                         </NavLink>
                     </li>
                     <li>
-                        <Link to="#" className="text-[#5A698F] md:hover:text-[#FC4747] transition-colors">
+                        <NavLink to="/tv-series" className="text-[#5A698F] md:hover:text-[#FC4747] transition-colors"
+                          style={({ isActive }) =>
+                              isActive
+                                  ? { color: '#ffffff', }
+                                  : { color: '#5A698F' }
+                          } end>
                             <svg width="20" height="20" fill="currentColor" className="hidden" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M9.08 4.481H20V20H0V4.481h4.92l-2.7-3.278L3.78.029 7 3.91 10.22 0l1.56 1.203-2.7 3.278ZM2 6.421v11.64h10V6.42H2Zm15 7.76h-2v-1.94h2v1.94Zm-2-3.88h2V8.36h-2v1.94Z"/></svg>
                             <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M7.264 3.585H16V16H0V3.585h3.936L1.776.962 3.024.023 5.6 3.127 8.176 0l1.248.962-2.16 2.623ZM1.6 14.448h8V5.137h-8v9.311Zm12-3.104H12V9.792h1.6v1.552ZM12 8.241h1.6V6.689H12V8.24Z"/></svg>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
                         <Link to="#" className="text-[#5A698F] md:hover:text-[#FC4747] transition-colors">
