@@ -1,5 +1,5 @@
 import Search from "../components/Search";
-import AllBookmarked from "../components/AllBookmarked";
+import AllBookmarks from "../components/AllBookmarks";
 import {useEffect} from "react";
 
 const Bookmarked = ({title}) => {
@@ -10,7 +10,7 @@ const Bookmarked = ({title}) => {
     return (
         <div>
             <Search title="Search for your bookmarks" />
-            <AllBookmarked />
+            <AllBookmarks />
         </div>
     );
 }
