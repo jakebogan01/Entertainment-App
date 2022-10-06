@@ -21,8 +21,8 @@ const Login = ({title, funcNav}) => {
                 <form autoComplete="on">
                     <input id="email" name="email" className="block w-full border border-transparent border-b-[#5A698F] bg-transparent pb-[1.125rem] caret-red-500 pl-4 pr-4 mt-[2.0625rem] placeholder-[#87898D] focus:border-transparent focus:border-b-white focus:bg-transparent focus:text-white focus:placeholder-gray-500 focus:outline-none focus:ring-transparent focus:placeholder:text-transparent text-base" placeholder="Email Address" type="email" autoComplete="on" required/>
                     <input id="password" name="password" className="block w-full border border-transparent border-b-[#5A698F] bg-transparent pb-[1.125rem] caret-red-500 pl-4 pr-4 mt-5 placeholder-[#87898D] focus:border-transparent focus:border-b-white focus:bg-transparent focus:text-white focus:placeholder-gray-500 focus:outline-none focus:ring-transparent focus:placeholder:text-transparent text-base" placeholder="Password" type="password" autoComplete="on" required/>
-                    <button type="submit" className="text-[0.9375rem] bg-[#FC4747] rounded-md w-full h-12 mb-[1.375rem] mt-10">
-                        Login to your account
+                    <button type="submit" className="group text-[0.9375rem] bg-[#FC4747] md:hover:bg-white rounded-md w-full h-12 mb-[1.375rem] mt-10 transition-colors">
+                        <span className="md:group-hover:text-black transition-colors">Login to your account</span>
                     </button>
                 </form>
                 <p className="text-[0.9375rem]">Don't have an account yet?&#160; <Link to="/registration" className="text-[#FC4747] md:hover:text-white transition-colors">Sign Up</Link></p>
