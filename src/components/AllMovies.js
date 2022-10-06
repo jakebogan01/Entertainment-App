@@ -29,7 +29,7 @@ export default class AllMovies extends Component {
         }
         return (
             <section>
-                <h2 className="font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] mb-[1.3125rem] md:mb-7 transition-all">Movies</h2>
+                <h2 className="title font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] mb-[1.3125rem] md:mb-7 transition-all">Movies</h2>
                 <div className="recommended-grid grid grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-x-7 md:gap-y-4 px-4 md:px-[1.5625rem] transition-all">
                     { cards }
                 </div>

@@ -17,7 +17,7 @@ function App() {
         <Router>
             <div className="App flex flex-col 1440:flex-row max-w-[90rem] mx-auto bg-[#10141E] font-outfit">
                 {showNav && <Navbar />}
-                <main className="1440:max-w-[79.75rem] 1440:ml-9 transition-all">
+                <main className="flex-1 1440:max-w-[79.75rem] 1440:ml-9 transition-all">
                     <Routes>
                         <Route path="/" element={<Home title="Home" funcNav={setShowNav} />}></Route>
                         <Route path="/movies" element={<Movies title="Movies" />}></Route>

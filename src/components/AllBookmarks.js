@@ -4,7 +4,7 @@ import Bookmark from "./Bookmark";
 export default class AllBookmarks extends Component {
     render() {
         const cards = [];
-        for (let i = 1; i <= 24; i++) {
+        for (let i = 1; i <= 12; i++) {
             cards.push(
                 <div>
                     <div className="relative h-[29.334vw] max-h-[8.75rem] md:h-[18.23vw] md:max-h-[10.875rem] rounded-lg bg-center bg-cover bg-no-repeat" style={{backgroundImage: "url('https://i0.wp.com/alexonthemap.com/wp-content/uploads/2019/02/woman-looking-at-hot-air-balloons-3278215.jpg?fit=1280%2C853&ssl=1')"}}>
@@ -29,7 +29,7 @@ export default class AllBookmarks extends Component {
         }
         return (
             <section>
-                <h2 className="font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] mb-[1.3125rem] md:mb-7 transition-all">Your Bookmarks</h2>
+                <h2 className="title font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] mb-[1.3125rem] md:mb-7 transition-all">Your Bookmarks</h2>
                 <div className="recommended-grid grid grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-x-7 md:gap-y-4 px-4 md:px-[1.5625rem] transition-all">
                     { cards }
                 </div>

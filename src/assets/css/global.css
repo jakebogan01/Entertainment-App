@@ -16,6 +16,7 @@ html {
 }
 body {
     background-color: #10141E;
+    overflow-x: hidden;
 }
 @media (min-width: 1440px) {
     header {
