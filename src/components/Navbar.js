@@ -59,7 +59,7 @@ export default class Navbar extends Component {
                         </li>
                     </ul>
 
-                    <Link to="/register" className="w-6 h-6 border-2 border-white md:hover:border-[#FC4747] rounded-full overflow-hidden transition-colors">
+                    <Link to="/login" className="w-6 h-6 border-2 border-white md:hover:border-[#FC4747] rounded-full overflow-hidden transition-colors">
                         <img src={user} className="w-full rounded-full" alt="logo"/>
                     </Link>
                 </nav>

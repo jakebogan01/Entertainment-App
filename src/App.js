@@ -4,6 +4,7 @@ import Movies from "./pages/Movies";
 import Shows from "./pages/Shows";
 import Bookmarked from "./pages/Bookmarked";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 import './assets/css/global.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {useState} from "react";
@@ -21,7 +22,8 @@ function App() {
                         <Route path="/movies" element={<Movies title="Movies" />}></Route>
                         <Route path="/tv-series" element={<Shows title="TV Show" />}></Route>
                         <Route path="/my-bookmarks" element={<Bookmarked title="My Bookmarks" />}></Route>
-                        <Route path="/register" element={<Login title="registration" funcNav={setShowNav} />}></Route>
+                        <Route path="/login" element={<Login title="Login" funcNav={setShowNav} />}></Route>
+                        <Route path="/registration" element={<SignUp title="registration" funcNav={setShowNav} />}></Route>
                     </Routes>
                 </main>
             </div>
