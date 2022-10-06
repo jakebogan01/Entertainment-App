@@ -7,8 +7,8 @@ export default class Recommended extends Component {
             <section>
                 <h2 className="title font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] my-[1.3125rem] md:mt-12 md:mb-7 transition-all">Recommended for you</h2>
                 <div className="recommended-grid grid grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-x-7 md:gap-y-4 px-4 md:px-[1.5625rem] transition-all">
-                    {this.props.movies.map((movie) => (
-                        <div key={movie.id}>
+                    {this.props.topRatedMovies.map((movie) => (
+                        <div key={movie.id} className={movie.backdrop_path ? 'block' : 'hidden'}>
                             <div className="relative h-[29.334vw] max-h-[8.75rem] md:h-[18.23vw] md:max-h-[10.875rem] rounded-lg bg-center bg-cover bg-no-repeat" style={{backgroundImage: "url('https://image.tmdb.org/t/p/w500/" + movie.backdrop_path + "')"}}>
                                 <Bookmark color="transparent"/>
                                 <div className="hidden md:block group p-4">
@@ -28,7 +28,7 @@ export default class Recommended extends Component {
                             </div>
                         </div>
                     ))}
-                    {this.props.shows.map((show) => (
+                    {this.props.topRatedShows.map((show) => (
                         <div key={show.id} className={show.backdrop_path ? 'block' : 'hidden'}>
                             <div className="relative h-[29.334vw] max-h-[8.75rem] md:h-[18.23vw] md:max-h-[10.875rem] rounded-lg bg-center bg-cover bg-no-repeat" style={{backgroundImage: "url('https://image.tmdb.org/t/p/w500/" + show.backdrop_path + "')"}}>
                                 <Bookmark color="transparent"/>

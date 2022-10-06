@@ -5,21 +5,23 @@ import useFetch from "../components/useFetch";
 import {useEffect} from "react";
 
 const Home = ({title, funcNav}) => {
-    let { data:movies } = useFetch('https://api.themoviedb.org/3/movie/popular?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US');
-    let { data:shows } = useFetch('https://api.themoviedb.org/3/tv/popular?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US&page=1');
+    let { data:popularMovies } = useFetch('https://api.themoviedb.org/3/movie/popular?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US');
+    let { data:topRatedMovies } = useFetch('https://api.themoviedb.org/3/movie/top_rated?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US');
+    let { data:topRatedShows } = useFetch('https://api.themoviedb.org/3/tv/top_rated?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US&page=1');
 
     useEffect(() => {
         document.title = title;
         funcNav(true);
-        console.log(movies)
-        console.log(shows)
-    }, [movies, shows])
+        console.log(popularMovies)
+        console.log(topRatedShows)
+        console.log(topRatedMovies)
+    }, [popularMovies, topRatedShows])
 
     return (
         <div>
             <Search title="Search for movies or TV series" />
-            <Trending/>
-            {movies && <Recommended movies={movies} shows={shows} />}
+            {popularMovies && <Trending popularMovies={popularMovies} />}
+            {topRatedMovies && <Recommended topRatedMovies={topRatedMovies} topRatedShows={topRatedShows} />}
         </div>
     );
 }
