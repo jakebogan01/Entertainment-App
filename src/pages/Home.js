@@ -12,10 +12,7 @@ const Home = ({title, funcNav}) => {
     useEffect(() => {
         document.title = title;
         funcNav(true);
-        console.log(popularMovies)
-        console.log(topRatedShows)
-        console.log(topRatedMovies)
-    }, [popularMovies, topRatedShows])
+    }, [popularMovies, topRatedMovies, topRatedShows])
 
     return (
         <div>
