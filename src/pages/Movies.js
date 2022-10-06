@@ -1,4 +1,3 @@
-import Carousel from "../components/Carousel";
 import AllMovies from "../components/AllMovies";
 import {Component} from "react";
 import Search from "../components/Search";

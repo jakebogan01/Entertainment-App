@@ -12,7 +12,7 @@ export default class Carousel extends Component {
             cards.push(
                 <div>
                     <div className="relative flex flex-col bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://www.outsideonline.com/wp-content/uploads/2020/02/03/traveling-with-anxiety_h.jpg')"}}>
-                        <Bookmark />
+                        <Bookmark color="transparent"/>
                         <div className="group p-4">
                             <div className="md:group-hover:opacity-100 opacity-0 flex justify-center items-center absolute inset-0 w-full h-full bg-black bg-opacity-50 z-10 transition-opacity duration-300">
                                 <button type="button" className="flex justify-center items-center bg-white bg-opacity-25 text-white rounded-full w-[7.3125rem] h-12 cursor-pointer">
