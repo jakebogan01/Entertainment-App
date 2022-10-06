@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
+import './assets/css/global.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -10,7 +11,6 @@ function App() {
             <div className="App bg-[#10141E] font-outfit">
                 <Navbar />
                 <main>
-                    <Search />
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
                         <Route path="/movies" element={<Movies />}></Route>

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Bookmark from "./Bookmark";
 
-export default class Recommended extends Component {
+export default class AllMovies extends Component {
     render() {
         const cards = [];
         for (let i = 1; i <= 24; i++) {
@@ -29,7 +29,7 @@ export default class Recommended extends Component {
         }
         return (
             <section>
-                <h2 className="font-light text-xl text-white pl-4 my-[1.3125rem]">Recommended for you</h2>
+                <h2 className="font-light text-xl text-white pl-4 my-[1.3125rem]">Movies</h2>
                 <div className="recommended-grid grid grid-cols-2 md:grid-cols-3 gap-3.5 px-4">
                     { cards }
                 </div>

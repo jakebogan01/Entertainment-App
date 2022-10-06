@@ -1,13 +1,15 @@
 import Carousel from "../components/Carousel";
-import Recommended from "../components/Recommended";
+import AllMovies from "../components/AllMovies";
 import {Component} from "react";
+import Search from "../components/Search";
 
 export default class Movies extends Component {
     render() {
         return (
             <div>
+                <Search title="Search for movies" />
                 <Carousel/>
-                <Recommended />
+                <AllMovies />
             </div>
         );
     }
