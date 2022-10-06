@@ -3,7 +3,6 @@
     position: absolute;
 }
 .slick-initialized .slick-slide {
-    background: blue;
     width: 15rem;
     margin: 0 0.5rem;
     height: 8.75rem;
@@ -14,7 +13,20 @@
     -o-transform: translateX(1rem);
     transform: translateX(1rem);
     overflow: hidden;
+    transition: all 150ms;
 }
 .slick-initialized .slick-slide div, .slick-initialized .slick-slide div div{
     height: 100%;
+}
+@media (min-width: 768px) {
+    .slick-initialized .slick-slide {
+        width: 29.375rem;
+        height: 14.375rem;
+        margin: 0 1.25rem;
+        -webkit-transform: translateX(1.5625rem);
+        -moz-transform: translateX(1.5625rem);
+        -ms-transform: translateX(1.5625rem);
+        -o-transform: translateX(1.5625rem);
+        transform: translateX(1.5625rem);
+    }
 }

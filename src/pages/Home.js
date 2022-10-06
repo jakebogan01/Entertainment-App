@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel";
+import Trending from "../components/Trending";
 import Recommended from "../components/Recommended";
 import Search from "../components/Search";
 import {useEffect} from "react";
@@ -12,7 +12,7 @@ const Home = ({title, funcNav}) => {
     return (
         <div>
             <Search title="Search for movies or TV series" />
-            <Carousel/>
+            <Trending/>
             <Recommended />
         </div>
     );
