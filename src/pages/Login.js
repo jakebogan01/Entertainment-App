@@ -16,7 +16,7 @@ const Login = ({title, funcNav}) => {
                     </Link>
                 </nav>
             </header>
-            <section className="bg-[#161D2F] text-white font-light rounded-xl px-6 pb-[2.125rem] pt-[1.125rem] mt-[3.625rem]">
+            <section className="bg-[#161D2F] text-white font-light rounded-xl px-6 pb-[2.125rem] pt-[1.125rem] mt-[3.625rem] max-w-[25rem] mx-auto md:mt-[4.5rem] md:px-[2rem] md:pt-[1.8125rem] transition-all">
                 <h1 className="text-[2rem]">Login</h1>
                 <form autoComplete="on">
                     <input id="email" name="email" className="block w-full border border-transparent border-b-[#5A698F] bg-transparent pb-[1.125rem] caret-red-500 pl-4 pr-4 mt-[2.0625rem] placeholder-[#87898D] focus:border-transparent focus:border-b-[#5A698F] focus:bg-transparent focus:text-white focus:placeholder-gray-500 focus:outline-none focus:ring-transparent focus:placeholder:text-transparent text-base" placeholder="Email Address" type="email" autoComplete="on" required/>
