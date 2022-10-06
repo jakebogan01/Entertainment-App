@@ -1,14 +1,18 @@
 import AllShows from "../components/AllShows";
-import {Component} from "react";
+import {useEffect} from "react";
 import Search from "../components/Search";
 
-export default class Shows extends Component {
-    render() {
-        return (
-            <div>
-                <Search title="Search for TV series" />
-                <AllShows />
-            </div>
-        );
-    }
+const Shows = ({title}) => {
+    useEffect(() => {
+        document.title = title;
+    }, [])
+
+    return (
+        <div>
+            <Search title="Search for TV series" />
+            <AllShows />
+        </div>
+    );
 }
+
+export default Shows;

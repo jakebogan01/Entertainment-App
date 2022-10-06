@@ -13,10 +13,10 @@ function App() {
                 <Navbar />
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home />}></Route>
-                        <Route path="/movies" element={<Movies />}></Route>
-                        <Route path="/tv-series" element={<Shows />}></Route>
-                        <Route path="/my-bookmarks" element={<Bookmarked />}></Route>
+                        <Route path="/" element={<Home title="Home" />}></Route>
+                        <Route path="/movies" element={<Movies title="Movies" />}></Route>
+                        <Route path="/tv-series" element={<Shows title="TV Show" />}></Route>
+                        <Route path="/my-bookmarks" element={<Bookmarked title="My Bookmarks" />}></Route>
                     </Routes>
                 </main>
             </div>

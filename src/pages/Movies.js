@@ -1,14 +1,18 @@
 import AllMovies from "../components/AllMovies";
-import {Component} from "react";
+import {useEffect} from "react";
 import Search from "../components/Search";
 
-export default class Movies extends Component {
-    render() {
-        return (
-            <div>
-                <Search title="Search for movies" />
-                <AllMovies />
-            </div>
-        );
-    }
+const Movies = ({title}) => {
+    useEffect(() => {
+        document.title = title;
+    }, [])
+
+    return (
+        <div>
+            <Search title="Search for movies" />
+            <AllMovies />
+        </div>
+    );
 }
+
+export default Movies;
