@@ -18,7 +18,19 @@
 .slick-initialized .slick-slide div, .slick-initialized .slick-slide div div{
     height: 100%;
 }
+.slick-dots {
+    display: none !important;
+}
+.slick-dots li button:before {
+    color: #ffffff;
+}
+.slick-dots li.slick-active button:before {
+    color: #ffffff;
+}
 @media (min-width: 768px) {
+    .slick-dots {
+        display: block !important;
+    }
     .slick-initialized .slick-slide {
         width: 29.375rem;
         height: 14.375rem;

@@ -33,8 +33,12 @@ export default class Trending extends Component {
         }
         const settings = {
             className: "slider variable-width",
-            dots: false,
-            speed: 500,
+            dots: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 8000,
+            cssEase: "ease-in-out",
+            pauseOnHover: true,
             infinite: true,
             centerMode: false,
             slidesToShow: 1,
