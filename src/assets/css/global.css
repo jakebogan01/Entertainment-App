@@ -18,7 +18,20 @@ body {
     background-color: #10141E;
 }
 @media (min-width: 1440px) {
+    header {
+        margin: 2rem 0 0 2rem !important;
+    }
+    .main-nav {
+        padding: 2.1875rem 1rem !important;
+    }
+    .search-icon, .title {
+        padding-left: 0;
+    }
+    #search {
+        padding-left: 3rem;
+    }
     .recommended-grid {
+        padding: 0;
         -webkit-grid-template-columns: repeat(4, minmax(0, 1fr));
         -moz-grid-template-columns: repeat(4, minmax(0, 1fr));
         -ms-grid-template-columns: repeat(4, minmax(0, 1fr));

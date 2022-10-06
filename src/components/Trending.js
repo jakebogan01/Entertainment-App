@@ -15,7 +15,7 @@ export default class Trending extends Component {
                         <Bookmark color="transparent"/>
                         <div className="group p-4">
                             <div className="md:group-hover:opacity-100 opacity-0 flex justify-center items-center absolute inset-0 w-full h-full bg-black bg-opacity-50 z-10 transition-opacity duration-300">
-                                <button type="button" className="flex justify-center items-center bg-white bg-opacity-25 text-white rounded-full w-[7.3125rem] h-12 cursor-pointer">
+                                <button type="button" className="flex justify-center items-center bg-white bg-opacity-25 text-white rounded-full w-[7.3125rem] transform 1440:scale-125 h-12 cursor-pointer">
                                         <span className="flex items-center space-x-5">
                                             <svg width="30" height="30" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M0 15C0 6.713 6.713 0 15 0c8.288 0 15 6.713 15 15 0 8.288-6.712 15-15 15-8.287 0-15-6.712-15-15Zm21-.5L12 8v13l9-6.5Z" /></svg>
                                             <span>Play</span>
@@ -44,7 +44,7 @@ export default class Trending extends Component {
         };
         return (
             <section>
-                <h2 className="font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] mb-4 md:mb-7 transition-all">Trending</h2>
+                <h2 className="title font-light text-xl md:text-[2rem] text-white pl-4 md:pl-[1.5625rem] mb-4 md:mb-7 transition-all">Trending</h2>
                 <Slider {...settings}>
                     { cards }
                 </Slider>

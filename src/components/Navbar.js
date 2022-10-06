@@ -6,13 +6,13 @@ export default class Navbar extends Component {
     render() {
         return (
             <header className="md:mx-[1.5625rem] md:mt-[1.4375rem] transition-all">
-                <nav className="flex justify-between items-center bg-[#161D2F] py-[1.125rem] px-4 md:py-5 md:rounded-xl transition-all">
-                    <Link to="/" className="text-[#FC4747] md:hover:text-white transition-colors">
+                <nav className="main-nav flex 1440:flex-col justify-between 1440:justify-start items-center bg-[#161D2F] py-[1.125rem] px-4 md:px-6 md:py-5 md:rounded-xl 1440:h-[60rem] 1440:w-[6rem] transition-all">
+                    <Link to="/" className="text-[#FC4747] md:hover:text-white 1440:mb-[4.6875rem] transition-colors">
                         <svg width="33" height="27" fill="currentColor" className="hidden md:block" xmlns="http://www.w3.org/2000/svg"><path d="m26.463.408 3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-1.6a3.186 3.186 0 0 0-3.184 3.2l-.016 19.2a3.2 3.2 0 0 0 3.2 3.2h25.6a3.2 3.2 0 0 0 3.2-3.2V.408h-6.4Z"/></svg>
                         <svg width="25" height="20" fill="currentColor" className="md:hidden" xmlns="http://www.w3.org/2000/svg"><path d="m20 0 2.5 5h-3.75l-2.5-5h-2.5l2.5 5H12.5L10 0H7.5L10 5H6.25l-2.5-5H2.5A2.489 2.489 0 0 0 .013 2.5L0 17.5A2.5 2.5 0 0 0 2.5 20h20a2.5 2.5 0 0 0 2.5-2.5V0h-5Z"/></svg>
                     </Link>
 
-                    <ul className="flex items-center space-x-6">
+                    <ul className="flex 1440:flex-col items-center space-x-6 1440:space-x-0 1440:space-y-6 1440:mb-[37.5rem]">
                         <li>
                             <NavLink to="/" className="text-white"
                               style={({ isActive }) =>
@@ -59,7 +59,7 @@ export default class Navbar extends Component {
                         </li>
                     </ul>
 
-                    <Link to="/login" className="w-6 h-6 md:w-8 md:h-8 border-2 border-white md:hover:border-[#FC4747] rounded-full overflow-hidden transition-all">
+                    <Link to="/login" className="w-6 h-6 md:w-8 md:h-8 border-2 border-white md:hover:border-[#FC4747] rounded-full transform 1440:scale-[1.25] overflow-hidden transition-all">
                         <img src={user} className="w-full rounded-full" alt="logo"/>
                     </Link>
                 </nav>

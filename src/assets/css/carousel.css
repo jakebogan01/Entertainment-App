@@ -30,3 +30,12 @@
         transform: translateX(1.5625rem);
     }
 }
+@media (min-width: 1440px) {
+    .slick-initialized .slick-slide {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
