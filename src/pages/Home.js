@@ -28,6 +28,10 @@ const Home = ({title, funcNav}) => {
         funcNav(true);
     }, [title, funcNav, popularMovies, topRatedMovies, topRatedShows])
 
+    if (!topRatedMovies && !popularMovies && !topRatedShows) {
+        return <div>Loading your entertainment...</div>
+    }
+
     return (
         <div>
             <Search handleSubmit={handleSubmit} title="Search for movies or TV series" />
@@ -38,7 +42,7 @@ const Home = ({title, funcNav}) => {
             {!load1 &&
                 <div className={searchResults === "" ? 'block' : 'hidden'}>
                     {popularMovies && <Trending popularMovies={popularMovies}/>}
-                    {topRatedMovies && <Recommended topRatedMovies={topRatedMovies} topRatedShows={topRatedShows}/>}
+                    {topRatedShows && <Recommended topRatedMovies={topRatedMovies} topRatedShows={topRatedShows}/>}
                 </div>
             }
         </div>
