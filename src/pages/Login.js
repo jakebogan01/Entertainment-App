@@ -5,7 +5,7 @@ const Login = ({title, funcNav}) => {
     useEffect(() => {
         document.title = title;
         funcNav(false);
-    }, [])
+    }, [title, funcNav])
 
     return (
         <div className="py-12 px-6">

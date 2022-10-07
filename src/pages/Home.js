@@ -27,7 +27,7 @@ const Home = ({title, funcNav}) => {
     useEffect(() => {
         document.title = title;
         funcNav(true);
-    }, [popularMovies, topRatedMovies, topRatedShows])
+    }, [title, funcNav, popularMovies, topRatedMovies, topRatedShows])
 
     return (
         <div>

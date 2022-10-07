@@ -4,7 +4,7 @@ import Search from "../components/Search";
 import useFetch from "../components/useFetch";
 import SearchResults from "../components/SearchResults";
 
-const Shows = ({title}) => {
+const Shows = ({title, funcNav}) => {
     let { data:popularShows, isPending } = useFetch('https://api.themoviedb.org/3/tv/popular?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US&page=1');
     const [searchResults, setSearchResults] = useState("");
     let { data:results } = useFetch('https://api.themoviedb.org/3/search/tv?api_key=0497a560599e4b1196149db7ecbc29bb&language=en-US&page=1&query=', searchResults, 'shows');
@@ -22,7 +22,8 @@ const Shows = ({title}) => {
 
     useEffect(() => {
         document.title = title;
-    }, [])
+        funcNav(true);
+    }, [title, funcNav])
 
     return (
         <div>
