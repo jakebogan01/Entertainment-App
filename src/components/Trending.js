@@ -19,6 +19,7 @@ export default class Trending extends Component {
             centerMode: false,
             slidesToShow: 1,
             slidesToScroll: 1,
+            swipeToSlide: true,
             initialSlide: 0,
             variableWidth: true
         };

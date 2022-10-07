@@ -18,6 +18,9 @@ body {
     background-color: #10141E;
     overflow-x: hidden;
 }
+#search:not(:focus) {
+    color: #ffffff;
+}
 @media (min-width: 1440px) {
     header {
         margin: 2rem 0 0 2rem !important;
@@ -32,11 +35,16 @@ body {
         padding-left: 3rem;
     }
     .recommended-grid {
-        padding: 0;
+        padding-left: 0;
         -webkit-grid-template-columns: repeat(4, minmax(0, 1fr));
         -moz-grid-template-columns: repeat(4, minmax(0, 1fr));
         -ms-grid-template-columns: repeat(4, minmax(0, 1fr));
         -o-grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1500px) {
+    .recommended-grid {
+        padding-right: 0;
     }
 }
