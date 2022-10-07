@@ -20,9 +20,9 @@ function App() {
                 <main className="flex-1 1440:max-w-[79.75rem] 1440:ml-9 pb-10 transition-all">
                     <Routes>
                         <Route path="/" element={<Home title="Home" funcNav={setShowNav} />}></Route>
-                        <Route path="/movies" element={<Movies title="Movies" />}></Route>
-                        <Route path="/tv-series" element={<Shows title="TV Show" />}></Route>
-                        <Route path="/my-bookmarks" element={<Bookmarked title="My Bookmarks" />}></Route>
+                        <Route path="/movies" element={<Movies title="Movies" funcNav={setShowNav} />}></Route>
+                        <Route path="/tv-series" element={<Shows title="TV Show" funcNav={setShowNav} />}></Route>
+                        <Route path="/my-bookmarks" element={<Bookmarked title="My Bookmarks" funcNav={setShowNav} />}></Route>
                         <Route path="/login" element={<Login title="Login" funcNav={setShowNav} />}></Route>
                         <Route path="/registration" element={<SignUp title="registration" funcNav={setShowNav} />}></Route>
                         <Route path="*" element={<NotFound title="Page Not Found" funcNav={setShowNav} />}></Route>
