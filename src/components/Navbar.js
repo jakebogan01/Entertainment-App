@@ -1,5 +1,5 @@
 import {Link, NavLink} from "react-router-dom";
-import user from '../assets/images/user.jpg';
+import user from '../assets/images/user.webp';
 import {Component} from "react";
 
 export default class Navbar extends Component {
