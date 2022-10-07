@@ -40,7 +40,7 @@ const useFetch = (url, term, type) => {
 
     }, [url])
 
-    return { data }
+    return { data, isPending }
 }
 
 export default useFetch;
