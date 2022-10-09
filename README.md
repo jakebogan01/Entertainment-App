@@ -7,7 +7,12 @@ You can check it out here :point_right: <a href="https://main--entertainment-api
 ## Details
 A movie app template that uses TMDB API. View movies or TV series or search a movie manually. This project uses, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, and <a href="https://reactjs.org" target="_blank">React JS</a>.
 
-### run application
+### Installation
+```
+npm install
+```
+
+### Run application
 ```
 npm run start
 ```
